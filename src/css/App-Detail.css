@@ -1,0 +1,57 @@
+body {
+  font-family: "Noto Sans", Arial, sans-serif;
+}
+
+.pokemon-detail-contents {
+  max-width: 1400px;
+  width: 100%;
+  background-image: url("https://th.portal-pokemon.com/play/resources/pokedex/img/main_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-color: #0a0e1a;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.pokedex-detail-container__name {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 25px auto;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* ===== Header back button ===== */
+.pokedex-detail__header {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.pokemon-detail__header__back-to-list {
+  display: flex;
+  font-family: "Noto Sans", Arial, sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 200px;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.pokemon-detail__header__back-to-top {
+  cursor: pointer;
+  color: #000000;
+  font-size: 25px;
+  font-family: "Noto Sans", Arial, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 200px;
+}
