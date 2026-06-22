@@ -2,7 +2,6 @@ import { createBrowserRouter, RouterProvider, Navigate} from "react-router";
 import NotFound from './components/NotFound';
 import PokemonList from "./components/PokemonList"
 import PokemonDetail from "./components/PokemonDetail";
-import "./css/App.css";
 
 const router = createBrowserRouter([
   { path: "/", element: < Navigate to="/PokeDex" replace />},
