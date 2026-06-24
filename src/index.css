@@ -12,8 +12,8 @@ html {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 120px;
-  height: 48px;
+  width: 140px;
+  height: 50px;
 }
 
 /* Pokemon card bg */
@@ -24,14 +24,15 @@ html {
 
 /* List section bg */
 .list-section-bg {
-  background-image: url("https://th.portal-pokemon.com/play/resources/pokedex/img/main_sp_bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("https://th.portal-pokemon.com/play/resources/pokedex/img/list_bg.jpg");
+  background-position: top;
+  background-repeat: repeat;
+  background-size: 100% auto;
 }
 
 /* Detail page bg */
 .detail-section-bg {
-  background-image: url("https://th.portal-pokemon.com/play/resources/pokedex/img/main_bg.jpg");
+  background-image: url("https://th.portal-pokemon.com/play/resources/pokedex/img/list_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -45,7 +46,7 @@ html {
   background-repeat: no-repeat;
 }
 .load-more-btn:hover {
-  background-image: url("https://th.portal-pokemon.com/play/resources/pokedex/img/morebtn_bg_on.png");
+  background-image: url("https://th.portal-pokemon.com/play/resources/pokedex/img/morebtn_bg_sp_on.png");
 }
 
 /* Loading gif */
@@ -58,7 +59,7 @@ html {
 
 /* Search input selection color */
 .search-input::selection {
-  background-color: #c9bb63;
+  background-color: #b3eafe;
 }
 
 /* NotFound dot pattern */
@@ -93,7 +94,7 @@ html {
 }
 
 /* Type badge colors */
-.type { @apply px-[35px] py-[4px] rounded-full text-white text-sm; }
+.type { @apply px-[35px] py-[4px] rounded-full text-white text-[16px]; }
 .type--normal   { background-color: #a0a0a0; filter: drop-shadow(0 0 3px #dcdcdc); }
 .type--fighting { background-color: #c85500; filter: drop-shadow(0 0 3px #dc6900); }
 .type--flying   { background-color: #79bcd7; filter: drop-shadow(0 0 3px #78dcff); }
