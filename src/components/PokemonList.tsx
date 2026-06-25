@@ -152,37 +152,45 @@ function PokemonList() {
 
   return (
     <>
-      <header className="flex items-center justify-center min-h-[60px] bg-white">
-        <div className="logo__" />
+      <header className="flex items-center justify-center min-h-[60px] bg-white z-40">
+        <div className="logo__ z-40" />
       </header>
 
       <div className="bg-[#1b252f]">
         <div className="relative max-w-[1400px] mx-auto">
 
-          <div className="relative">
-            <div className="absolute cursor-pointer top-10 left-1/2 -translate-x-1/2 text-[28px] text-black z-10 whitespace-nowrap px-[200px]">
+          <div className="relative overflow-hidden">
+            <div className="absolute cursor-pointer top-10 left-1/2 -translate-x-1/2 text-[28px] text-black z-20 whitespace-nowrap px-[200px]">
               โปเกเด็กซ์
             </div>
 
             <img
               src="https://th.portal-pokemon.com/play/resources/pokedex/img/list_top_bg.jpg"
               alt="Pokedex banner"
-              className="w-full block"
+              className="w-full block "
             />
 
             <img
               src="https://th.portal-pokemon.com/play/resources/pokedex/img/pokedex_bg.png"
-              className="absolute inset-0 w-auto h-auto object-cover object-center pointer-events-none select-none"
+              className="absolute inset-0 w-auto h-auto object-cover object-center pointer-events-none select-none z-10"
               aria-hidden="true"
             />
+
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none -translate-y-7">
+              <img
+                src="https://th.portal-pokemon.com/play/resources/pokedex/img/pokemon_list_bg.png"
+                className="w-[1350px] h-[550px] object-cover object-center select-none animate-spin [animation-duration:3s]"
+                aria-hidden="true"
+              />
+            </div>
 
             <div className="absolute bottom-[150px] left-[150px] right-10 z-10">
               <div className="search-panel absolute">
                 <img
-  src="https://th.portal-pokemon.com/play/resources/pokedex/img/random_center_bg.png"
-  className="absolute bottom-0 left-[550px] -translate-x-1/2 w-[250px] h-[550px] object-contain pointer-events-none select-none z-10"
-  aria-hidden="true"
-/>
+                  src="https://th.portal-pokemon.com/play/resources/pokedex/img/random_center_bg.png"
+                  className="absolute bottom-0 left-[550px] -translate-x-1/2 w-[250px] h-[550px] object-contain pointer-events-none select-none z-10"
+                  aria-hidden="true"
+                />
                 <p className="text-[#b3eafe] text-xl pb-4 pl-1 [filter:drop-shadow(0_0_5px_#fdfdfd)]">
                   ค้นหาด้วยชื่อ หรือ หมายเลขโปเกเด็กซ์
                 </p>
@@ -190,7 +198,7 @@ function PokemonList() {
                   <input
                     type="text"
                     value={inputText}
-                    className="search-input flex-1 min-w-0 py-2 pl-[90px] pr-[245px] text-[22px] border-none outline-none bg-white"
+                    className="search-input flex-1 min-w-0 py-2 pl-[50px] pr-[280px] text-[22px] border-none outline-none bg-white"
                     onChange={(e) => setInputText(e.target.value)}
                     onKeyDown={(e) => { e.stopPropagation(); if (e.key === "Enter") handleSearch(); }}
                   />
@@ -204,8 +212,11 @@ function PokemonList() {
                       className="w-7 h-7 object-contain"
                     />
                   </button>
+
                 </div>
+
               </div>
+
             </div>
           </div>
         </div>
